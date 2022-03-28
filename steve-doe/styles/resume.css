@@ -1,0 +1,232 @@
+body {
+    background-color: #f6f7f9;
+}
+
+#download {
+  margin-left: auto;
+  font-size: 12px;
+  height: fit-content;
+}
+
+#resume-head {
+  background-color: #434e5e;
+}
+
+#resume-body {
+  max-width: 100vw;
+}
+
+#resume-div, #career-summary {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#resume-div::-webkit-scrollbar, #career-summary::-webkit-scrollbar {
+  display: none
+}
+
+#address-info > i,
+#address-info,
+#social-links > span {
+  color: #b3b7bf;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #434e5e;
+}
+
+address {
+  line-height: 1px;
+}
+
+.fa-mobile-alt {
+  margin: 0 calc((16px - 10px) / 2);
+}
+
+#address-break {
+  content: "";
+}
+
+#steve {
+  letter-spacing: 2px;
+}
+
+#github-icon {
+  margin: calc(2.8px / 2) 0;
+}
+
+#codepen-icon {
+  width: 14px;
+  height: auto;
+}
+
+#social-links {
+    margin-left: auto;
+}
+
+.fa-globe {
+    color: #434e5e;
+    font-size: 10px;
+    position: relative;
+    top: .8px;
+    right: .2px;
+}
+
+#globe-container {
+    margin-top: 8px;
+}
+
+#globe-icon {
+    width: 14px;
+    height: 14px;
+    border-radius: 1px;
+}
+
+.flex-item {
+  width: calc(100% / 3);
+}
+
+#address-info > div > span, #social-links > span {
+    font-size: 12px;
+}
+
+.technology > li {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.p-small {
+  font-size: 14px;
+}
+
+.date {
+    color: #d3d8e0;
+}
+
+.job {
+    height: 20px;
+}
+
+#jobs {
+  min-width: 475px;
+}
+
+#resume-right {
+  min-width: 220px;
+}
+
+#jobs {
+  border-left: #c9cfd8 2px solid;
+  padding-bottom: 50px;
+}
+
+.job-title {
+    font-size: 18px;
+      display: list-item;
+      list-style-image: url(/steve-doe/images/bullet.svg);
+  }
+
+#work-experience {
+    width: fit-content;
+}
+
+#resume-right {
+    width: 35%;
+}
+
+#top-skill {
+    position: relative;
+    top: 2px;
+}
+
+.skill-list {
+    list-style-type: none;
+    font-size: 12px;
+}
+
+.progress {
+    height: 9px;
+    border-radius: 2px;
+}
+
+.link-nowrap {
+  font-size: 16px;
+  color: #b3b7bf;
+}
+
+#link-nowrap > a {
+  font-size: 18px;
+}
+
+#photo {
+  width: fit-content
+}
+
+.hide {
+  display: inline;
+}
+
+@media (max-width: 450px) {
+  #resume-head > figure > img {
+    width: 33vw;
+  }
+
+  address > span {
+    font-size: 12px !important;
+  }
+
+  #address-info > div > span {
+    font-size:  8px!important;
+  }
+
+  #name-address {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 600px) {
+    .hide {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+    #social-links {
+    width: fit-content !important;
+  }
+
+  #name-address {
+    flex-grow: 2;
+  }
+
+  .link-nowrap {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+    .resume {
+        margin: 0 9vw;
+    }
+    main > header > h1 {
+        font-size: 22px;
+    }
+
+    main > header {
+        height: 275px;
+        width: 100%;
+        padding-left: 10vw !important;
+        padding-right: 10vw !important;
+    }
+
+    .resume {
+        position: relative;
+        bottom: 165px;
+    }
+
+}

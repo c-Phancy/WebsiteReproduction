@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="styles/global.css" rel="stylesheet" />
+    <link href="styles/projects.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/f47530556a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark py-2 py-md-0">
+        <div class="container-fluid px-0">
+          <div id="nav-icons" class="d-flex">
+            <a href="https://twitter.com/home" class="fab fa-twitter px-3"></a>
+            <a
+              href="https://www.linkedin.com/"
+              class="fab fa-linkedin-in px-3"
+            ></a>
+            <a href="https://github.com/" class="fab fa-github-alt px-3"></a>
+            <a
+              href="https://stackoverflow.com/"
+              class="fab fa-stack-overflow px-3"
+            ></a>
+            <a href="https://codepen.io/" class="fab fa-codepen px-3"></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link mx-2" href="index.html">ABOUT</a>
+              <a
+                class="nav-link mx-2 active-link text-white"
+                aria-current="page"
+                href="#"
+                >PROJECTS</a
+              >
+              <a class="nav-link mx-2" href="resume.html">RESUME</a>
+              <a class="nav-link mx-2" href="contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <header class="text-center text-sm-start text-white py-4 px-5">
+        <h1 class="pb-2">Projects</h1>
+        <p>In-depth Case Studies to show you what I can offer and how I work</p>
+      </header>
+      <ul class="list-inline filter-button-group text-center p-5">
+        <li class="list-inline-item m-0">
+          <button data-="*" onclick="show('all')" class="rounded-3 border-0 py-1 px-3 active">
+            All
+          </button>
+        </li>
+        <li class="list-inline-item m-0">
+          <button
+            data-="angular"
+            onclick="show('angular')"
+            class="rounded-3 border-0 py-1 px-3"
+          >
+            Angular
+          </button>
+        </li>
+        <li class="list-inline-item m-0">
+          <button data-="react" onclick="show('react')" class="rounded-3 border-0 py-1 px-3">
+            React
+          </button>
+        </li>
+        <li class="list-inline-item m-0">
+          <button data-="python-django" onclick="show('python-django')" class="rounded-3 border-0 py-1 px-3">
+            Python/Django
+          </button>
+        </li>
+        <li class="list-inline-item m-0">
+          <button data-="ruby-rails" onclick="show('ruby-rails')" class="rounded-3 border-0 py-1 px-3">
+            Ruby/Rails
+          </button>
+        </li>
+        <li class="list-inline-item m-0">
+          <button data-="php" onclick="show('php')" class="rounded-3 border-0 py-1 px-3">PHP</button>
+        </li>
+      </ul>
+      <div class="d-md-flex d-block px-section px-5 card-group justify-content-center mb-5">
+        <figure class="card shadow-sm all mb-5 mb-md-0 text-center angular python-django">
+          <div class="project-image">
+            <img
+              src="images/google-project.jpg"
+              alt="Google logo"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-img-overlay justify-content-center d-flex p-5">
+              <img src="images/google-overlay.svg" class="w-50" />
+            </div>
+          </div>
+          <div class="card-body">
+            <figcaption>SaaS Project</figcaption>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Angular
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Django
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                MongoDB
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                HTML/CSS
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="card shadow-sm all mb-5 mb-md-0 text-center ruby-rails">
+          <div class="project-image">
+            <img
+              src="images/basecamp-project.jpg"
+              alt="Basecamp logo"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-img-overlay justify-content-center d-flex p-5">
+              <img src="images/basecamp-overlay.svg" class="w-75" />
+            </div>
+          </div>
+          <div class="card-body">
+            <figcaption>Webapp Development</figcaption>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Rails
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                jQuery
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                PostgresSQL
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                HTML/SASS
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="card shadow-sm all mb-5 mb-md-0 text-center react python-django">
+          <div class="project-image">
+            <img
+              src="images/airbnb-project.jpg"
+              alt="Airbnb logo"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-img-overlay justify-content-center d-flex p-5">
+              <img src="images/airbnb-overlay.svg" class="w-50" />
+            </div>
+          </div>
+          <div class="card-body">
+            <figcaption>Mobile app development</figcaption>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                React
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Python
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                MySQL
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Webpack
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                HTML
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="card shadow-sm all mb-5 mb-md-0 text-center react">
+          <div class="project-image">
+            <img
+              src="images/dropbox-project.jpg"
+              alt="Dropbox logo"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-img-overlay justify-content-center d-flex p-5">
+              <img src="images/dropbox-overlay.svg" class="w-50" />
+            </div>
+          </div>
+          <div class="card-body">
+            <figcaption>Internal Product</figcaption>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                React
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Flux
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Babel
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                MongoDB
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="card shadow-sm all mb-5 mb-md-0 text-center react php">
+          <div class="project-image">
+            <img
+              src="images/spotify-project.jpg"
+              alt="Spotify logo"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-img-overlay justify-content-center d-flex p-5">
+              <img src="images/spotify-overlay.svg" class="w-50" />
+            </div>
+          </div>
+          <div class="card-body">
+            <figcaption>Mobile App</figcaption>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                React
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                PHP
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                MySQL
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="card shadow-sm all mb-5 mb-md-0 text-center ruby-rails">
+          <div class="project-image">
+            <img
+              src="images/evernote-project.jpg"
+              alt="Evernote logo"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-img-overlay justify-content-center d-flex p-5">
+              <img src="images/evernote-overlay.svg" class="w-50" />
+            </div>
+          </div>
+          <div class="card-body">
+            <figcaption>Web App & Chrome Extension</figcaption>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                JavaScript
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Ruby
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                HTML/CSS
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="card shadow-sm all mb-5 mb-md-0 text-center angular php">
+          <div class="project-image">
+            <img
+              src="images/facebook-project.jpg"
+              alt="Facebook logo"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-img-overlay justify-content-center d-flex p-5">
+              <img src="images/facebook-overlay.svg" class="w-50" />
+            </div>
+          </div>
+          <div class="card-body">
+            <figcaption>Facebook Ads Manager</figcaption>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Angular
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                PHP
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                HTML/SaSS
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="card shadow-sm all mb-5 mb-md-0 text-center react python-django">
+          <div class="project-image">
+            <img
+              src="images/zendesk-project.jpg"
+              alt="Zendesk logo"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-img-overlay justify-content-center d-flex p-5">
+              <img src="images/zendesk-overlay.svg" class="w-50" />
+            </div>
+          </div>
+          <div class="card-body">
+            <figcaption>Mobile App Development</figcaption>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                React
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Django
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                HTML/SaSS
+              </li>
+            </ul>
+          </div>
+        </figure>
+        <figure class="card shadow-sm all mb-5 mb-md-0 text-center angular python-django">
+          <div class="project-image">
+            <img
+              src="images/coinbase-project.jpg"
+              alt="Coinbase logo"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-img-overlay justify-content-center d-flex p-5">
+              <img src="images/coinbase-overlay.svg" class="w-50" />
+            </div>
+          </div>
+          <div class="card-body">
+            <figcaption>App Development</figcaption>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Angular
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                Python
+              </li>
+              <li class="list-inline-item badge bg-secondary rounded-pill">
+                HTML/SaSS
+              </li>
+            </ul>
+          </div>
+        </figure>
+      </div>
+    </main>
+    <footer class="container-fluid text-center text-white px-section px-5 fs-5">
+      <figure>
+        <img
+          src="images/steve-doe-profile.jpg"
+          alt="Steve Doe profile picture"
+          class="rounded-circle mt-5 pt-2 mb-2"
+          width="100px"
+        />
+      </figure>
+      <h1 class="fw-bold">Interested in hiring me for your project?</h1>
+      <p class="mb-4">
+        Looking for an experienced full-stack developer to build your web app or
+        ship your software product? To start an intial chat, just drop me an
+        email at
+        <a href="steve.doe@youremail.com" rel="email"
+          >steve.doe@youremail.com</a
+        >
+        or use the <a href="contact.html">form on the contact page</a>.
+      </p>
+      <a
+        href="contact.html"
+        role="button"
+        class="btn btn-link mb-4 px-3 py-2 rounded-3 text-white border-0"
+      >
+        Let's Talk
+      </a>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/projects-script.js"></script>
+  </body>
+</html>

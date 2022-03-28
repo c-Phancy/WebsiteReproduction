@@ -1,0 +1,103 @@
+#triangle {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px white solid;
+}
+
+.main-icon {
+  font-size: clamp(10px, 7vw, 58px);
+}
+
+.font-awesome {
+  max-height: 50px;
+}
+
+.fa-twitter-square,
+.fa-twitter-square:hover {
+  color: #15aabf;
+}
+
+.fa-linkedin,
+.fa-linkedin:hover {
+  color: #0577b5;
+}
+
+#stack-overflow {
+  background-color: #f3a83c;
+}
+
+#medium {
+  background-color: #07b875;
+}
+
+.square-icon {
+  height: 6vw;
+  width: 6vw;
+  border-radius: 2px;
+  max-height: 50px;
+  max-width: 50px;
+}
+
+#github-icon {
+  height: 6vw;
+  max-height: 50px;
+  max-width: 50px;
+  width: auto;
+}
+
+#stack {
+  width: 4vw;
+  max-width: 32px;
+}
+
+.fa-resize {
+  font-size: clamp(1px, 4.5vw, 38px);
+  position: relative;
+  top: 0.4px;
+}
+
+form {
+  gap: 10px;
+}
+
+#email {
+  margin-left: auto;
+}
+
+.form-control {
+  font-size: 11px;
+}
+
+.form-control:focus {
+  border-color: #ced4da;
+  box-shadow: none !important;
+}
+
+.form-control::placeholder {
+  color: #9ea8b9;
+}
+
+form > button {
+  background-color: #42a4f5 !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+
+@media (min-width: 768px) {
+  .section-white {
+    margin-left: 15vw !important;
+    margin-right: 15vw !important;
+  }
+
+  form > textarea {
+    flex: 1 0 100%;
+    min-height: 25vh !important;
+  }
+
+  form > input {
+    width: calc((100% / 2) - (10px / 2)) !important;
+  }
+}

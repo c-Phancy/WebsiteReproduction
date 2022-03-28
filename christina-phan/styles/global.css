@@ -1,0 +1,209 @@
+/***** VARIABLES *****/
+:root {
+  --mainColor: #efb4b0;
+  --accentColor: #aed6f1;
+  --darkAccentColor: #3267af;
+  --secondaryColor: #6d6f7a;
+  --darkText: #181818;
+  --circle: #ec6655;
+  --resume: #f1995d;
+}
+
+/***** NAVIGATION *****/
+
+nav {
+  background-color: var(--mainColor);
+}
+
+#nav-icons > a {
+  color: var(--secondaryColor);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+
+.active-link:focus,
+.active-link,
+.link {
+  color: var(--darkText) !important;
+}
+
+.link {
+  transition: background-color 0.25s linear, color 0.25s linear;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.link:hover {
+  background-color: var(--darkAccentColor);
+  color: white !important;
+}
+
+@media (max-width: 767px) {
+  .active-link {
+    border: none !important;
+  }
+}
+
+/***** MAIN *****/
+
+.description {
+  line-height: 1.75em;
+}
+
+.page-header,
+footer {
+  background-color: var(--accentColor);
+}
+
+.btn {
+  background-color: var(--darkAccentColor);
+}
+
+.large-text {
+  color: var(--darkText);
+}
+
+.border-div {
+  background-color: var(--circle);
+  width: fit-content;
+  position: relative;
+  top: 46px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+}
+
+.bubble-icon {
+  width: 50px;
+}
+
+.shadow-box > ul {
+  padding: 0 15% 48px 15% !important;
+}
+
+.card-body > ul > li {
+  font-weight: 500;
+}
+
+.card-body > figcaption {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-group {
+  gap: 50px 30px;
+}
+
+.badge {
+  background-color: var(--darkAccentColor);
+}
+
+li::marker {
+  content: "＞";
+}
+
+/***** PROJECT BUTTONS *****/
+
+.filter-button-group > li > .active {
+  background-color: var(--darkAccentColor);
+  color: white;
+}
+
+.filter-button-group > li > button {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-basis: calc((1 / 3) * 100% - (2 / 3) * 30px) !important;
+    max-width: calc(100% / 3);
+  }
+}
+
+/***** FOOTER *****/
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+/***** RESUME *****/
+
+.resume-section {
+  color: var(--resume)
+}
+
+#download {
+  width: fit-content;
+}
+
+.flex-item {
+  flex: 1 0 100%;
+}
+
+#skill-list > li::marker {
+  content: none !important;
+}
+
+@media (min-width: 768px) {
+  .resume-half {
+    width: 50%;
+  }
+
+  #line {
+    border-right: black solid 2px;
+  }
+
+  .marker {
+    width: fit-content;
+  }
+
+  #skill-list {
+     width: 65%;
+     margin-left: auto;
+  }
+
+  .job-fit {
+    width: fit-content;
+  }
+
+  #skill-list > li::marker {
+    content: "＞" !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .resume-quarter {
+    width: 25%;
+  }
+
+  .resume-quarterThree {
+    width: 75%;
+  }
+}
+
+/***** CONTACT *****/
+
+#triangle {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px white solid;
+}
+
+@media (min-width: 768px) {
+  form > textarea {
+    flex: 1 0 100%;
+  }
+
+  form > input {
+    width: calc((100% / 2) - (1rem / 2)) !important;
+  }
+}
